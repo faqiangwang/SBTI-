@@ -1,0 +1,51 @@
+<!--pages/result/index.wxml-->
+<view class="page">
+  <view class="result-header">
+    <view class="emoji-large">{{result.emoji}}</view>
+    <text class="result-type-badge">{{result.code.toUpperCase()}}</text>
+    <text class="result-name">{{result.name}}</text>
+    <view class="result-traits">
+      <text class="traits-text">{{result.traits}}</text>
+    </view>
+    <view class="mbti-tag">
+      <text class="mbti-label">可能对应</text>
+      <text class="mbti-value">{{result.mbti}}</text>
+    </view>
+  </view>
+
+  <view class="result-section">
+    <view class="section-title">
+      <text>人格描述</text>
+    </view>
+    <view class="section-content">
+      <text class="desc-text">{{result.desc}}</text>
+    </view>
+  </view>
+
+  <view class="result-section">
+    <view class="section-title">
+      <text>关键词</text>
+    </view>
+    <view class="tags-container">
+      <block wx:for="{{result.tags}}" wx:key="index">
+        <view class="tag-item">#{{item}}</view>
+      </block>
+    </view>
+  </view>
+
+  <view class="result-section">
+    <view class="section-title">
+      <text>分享语</text>
+    </view>
+    <view class="share-quote">
+      <text class="quote-mark">"</text>
+      <text class="quote-text">{{result.share}}</text>
+      <text class="quote-mark">"</text>
+    </view>
+  </view>
+
+  <view class="actions">
+    <button class="action-btn primary" bindtap="goShare">生成分享图</button>
+    <button class="action-btn secondary" bindtap="retryTest">重新测试</button>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+/* app.wxss */
+page {
+  background-color: #f7f8fa;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+
+page {
+  --primary-color: #3b82f6;
+  --success-color: #22c55e;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-tertiary: #9ca3af;
+  --bg-page: #f7f8fa;
+  --bg-card: #ffffff;
+  --border-color: #e5e7eb;
+}

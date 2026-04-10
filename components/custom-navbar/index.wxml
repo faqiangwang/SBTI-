@@ -1,0 +1,19 @@
+<!--components/custom-navbar/index.wxml-->
+<view class="custom-navbar" style="padding-top: {{statusBarHeight}}px; background: {{bgColor}};">
+  <view class="navbar-content" style="height: {{navigationBarHeight}}px;">
+    <!-- 返回按钮 -->
+    <view wx:if="{{showBack}}" class="navbar-back" bindtap="onBack">
+      <text class="back-icon">‹</text>
+    </view>
+
+    <!-- 标题 -->
+    <view class="navbar-title" style="color: {{titleColor}};">
+      {{title}}
+    </view>
+
+    <!-- 右侧操作区 -->
+    <view class="navbar-action">
+      <slot name="action"></slot>
+    </view>
+  </view>
+</view>

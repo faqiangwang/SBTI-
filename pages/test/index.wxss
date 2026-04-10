@@ -1,0 +1,117 @@
+/* pages/test/index.wxss */
+.page {
+  min-height: 100vh;
+  padding: 200rpx 32rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.progress-card {
+  background: var(--bg-card);
+  border-radius: 12rpx;
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.progress-label {
+  font-size: 28rpx;
+  color: var(--text-secondary);
+}
+
+.progress-count {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.progress-bar {
+  height: 8rpx;
+  background: var(--border-color);
+  border-radius: 4rpx;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 4rpx;
+  transition: width 0.3s;
+}
+
+.question-card {
+  background: var(--bg-card);
+  border-radius: 12rpx;
+  padding: 40rpx 32rpx;
+}
+
+.question-header {
+  margin-bottom: 24rpx;
+}
+
+.question-number {
+  font-size: 24rpx;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.question-title {
+  display: block;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-bottom: 48rpx;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  padding: 28rpx 24rpx;
+  background: var(--bg-page);
+  border-radius: 8rpx;
+  border: 2rpx solid transparent;
+  transition: all 0.2s;
+}
+
+.option-item:active {
+  background: #eff6ff;
+  border-color: var(--primary-color);
+}
+
+.option-marker {
+  width: 48rpx;
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e7eb;
+  color: var(--text-secondary);
+  font-size: 24rpx;
+  font-weight: 600;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.option-item:active .option-marker {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.option-text {
+  font-size: 30rpx;
+  color: var(--text-primary);
+  flex: 1;
+}

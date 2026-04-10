@@ -1,0 +1,29 @@
+<!--pages/share/index.wxml-->
+<view class="page">
+  <view class="preview-area">
+    <image
+      wx:if="{{imageUrl}}"
+      src="{{imageUrl}}"
+      class="share-image"
+      mode="widthFix"
+      show-menu-by-longpress="{{true}}">
+    </image>
+    <view wx:else class="placeholder">
+      <text class="placeholder-text">图片生成中...</text>
+    </view>
+  </view>
+
+  <view class="tips-card">
+    <view class="tip-item">
+      <text class="tip-icon">💡</text>
+      <text class="tip-text">长按图片可保存到相册</text>
+    </view>
+  </view>
+
+  <view class="actions">
+    <button wx:if="{{imageUrl}}" class="action-btn primary" bindtap="saveImage">保存到相册</button>
+    <button class="action-btn secondary" bindtap="goBack">返回</button>
+  </view>
+</view>
+
+<canvas type="2d" id="shareCanvas" class="hidden-canvas"></canvas>

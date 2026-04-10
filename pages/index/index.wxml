@@ -1,0 +1,50 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+  <view class="header">
+    <view class="badge">热门测试</view>
+    <text class="title">SBTI人格测试</text>
+    <text class="subtitle">25题测出你的真实人格</text>
+  </view>
+
+  <view class="info-section">
+    <view class="info-item">
+      <text class="info-number">25</text>
+      <text class="info-label">测试题目</text>
+    </view>
+    <view class="info-divider"></view>
+    <view class="info-item">
+      <text class="info-number">35</text>
+      <text class="info-label">人格类型</text>
+    </view>
+    <view class="info-divider"></view>
+    <view class="info-item">
+      <text class="info-number">3</text>
+      <text class="info-label">分钟完成</text>
+    </view>
+  </view>
+
+  <view class="description">
+    <text class="desc-text">SBTI把MBTI那些高大上的标签打碎，换成了我们真实生活中的样子。35种人格类型，涵盖摆烂联盟、奉献天团、敏感星人、佛系阵营、犬儒先锋等，还有彩蛋类型。测试结果纯属娱乐，请勿当真。</text>
+  </view>
+
+  <view class="types-preview">
+    <text class="preview-title">35种人格类型</text>
+    <view class="type-list">
+      <view class="type-item" style="background: #6b728015; color: #6b7280;">摆烂联盟</view>
+      <view class="type-item" style="background: #3b82f615; color: #3b82f6;">奉献天团</view>
+      <view class="type-item" style="background: #8b5cf615; color: #8b5cf6;">敏感星人</view>
+      <view class="type-item" style="background: #22c55e15; color: #22c55e;">佛系阵营</view>
+      <view class="type-item" style="background: #f59e0b15; color: #f59e0b;">犬儒先锋</view>
+      <view class="type-item" style="background: #f43f5e15; color: #f43f5e;">社交困难</view>
+      <view class="type-item" style="background: #06b6d415; color: #06b6d4;">纠结内耗</view>
+    </view>
+  </view>
+
+  <view class="action-area">
+    <button class="start-btn" bindtap="startTest">开始测试</button>
+  </view>
+
+  <view class="footer">
+    <text class="footer-text">已有 528,391 人参与测试</text>
+  </view>
+</view>

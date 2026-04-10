@@ -1,0 +1,146 @@
+/* pages/index/index.wxss */
+.page {
+  min-height: 100vh;
+  padding: 32rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.header {
+  padding-bottom: 60rpx;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8rpx 20rpx;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 4rpx;
+  margin-bottom: 24rpx;
+}
+
+.title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 16rpx;
+}
+
+.subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: var(--text-secondary);
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--bg-card);
+  border-radius: 12rpx;
+  padding: 48rpx 0;
+  margin-bottom: 32rpx;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.info-number {
+  font-size: 48rpx;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 8rpx;
+}
+
+.info-label {
+  font-size: 24rpx;
+  color: var(--text-secondary);
+}
+
+.info-divider {
+  width: 1rpx;
+  height: 60rpx;
+  background: var(--border-color);
+}
+
+.description {
+  background: var(--bg-card);
+  border-radius: 12rpx;
+  padding: 32rpx;
+  margin-bottom: 32rpx;
+}
+
+.desc-text {
+  font-size: 28rpx;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.action-area {
+  margin-top: auto;
+  margin-bottom: 32rpx;
+}
+
+.start-btn {
+  width: 100%;
+  height: 96rpx;
+  line-height: 96rpx;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 500;
+  border-radius: 8rpx;
+  border: none;
+  text-align: center;
+}
+
+.start-btn:active {
+  opacity: 0.8;
+}
+
+.footer {
+  padding: 32rpx 0;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 24rpx;
+  color: var(--text-tertiary);
+}
+
+.types-preview {
+  background: var(--bg-card);
+  border-radius: 12rpx;
+  padding: 32rpx;
+  margin-bottom: 32rpx;
+}
+
+.preview-title {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 24rpx;
+}
+
+.type-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.type-item {
+  padding: 8rpx 16rpx;
+  border-radius: 4rpx;
+  font-size: 24rpx;
+}
